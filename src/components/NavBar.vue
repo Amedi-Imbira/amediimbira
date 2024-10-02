@@ -1,37 +1,50 @@
 <template>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-            <!-- BRAND SECTION -->
-            <div class="navbar-brand">
-                  <a href="#" class="navbar-item">
-                        AMEDI IMBIRA
-                  </a>
+  <nav>
+    <div class="navbar-brand">
+      <!-- #TODO: In italics -->
+      <h1>
+        <RouterLink to="/">STEPHEN IMBIRA</RouterLink>
+      </h1>
+    </div>
 
-                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                  </a>
-            </div>
-            <!-- END OF BRAND SECTION -->
-
-            <!-- MENU SECTION -->
-             <div class="navbar-menu">
-                  <!-- MENU LEFT -->
-                  <div class="navbar-start">
-                        <a href="#" class="navbar-item">About</a>
-                        <a href="#" class="navbar-item">Services</a>
-                        <a href="#" class="navbar-item">LinkedIn</a>
-                  </div>
-                  <!-- END OF MENU LEFT -->
-
-                  <!-- MENU RIGHT -->
-                   <div class="navbar-end">
-                        <button class="button">Enquire</button>
-                   </div>
-                  <!-- END OF MENU RIGHT -->
-             </div>
-            <!-- END OF MENU SECTION -->
-
-      </nav>
+    <div class="navbar-menu">
+      <ul>
+        <li>
+          <RouterLink to="/services">Services</RouterLink>
+          <!-- <a href="#">Services</a> -->
+        </li>
+        <li>
+          <RouterLink to="/about">About</RouterLink>
+        </li>
+      </ul>
+    </div>
+    <RouterLink to="/contact" class="btn-primary">Enquire</RouterLink>
+  </nav>
 </template>
+
+<style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-brand h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+
+.navbar-menu ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+</style>

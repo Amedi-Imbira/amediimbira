@@ -1,0 +1,65 @@
+@import './base.css';
+
+#app {
+      /* max-width: 1280px; */
+      /* margin: 0 auto; */
+      /* padding: 2 rem; */
+      font-weight: normal;
+}
+
+.section {
+      padding: 3rem 10%;
+}
+
+.columns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5rem 0;
+}
+
+.title {
+      font-size: 5rem;
+      font-weight: light;
+}
+
+.subtitle {
+      font-size: 2.5rem;
+}
+
+.header-one {
+      font-size: 20px;
+      /* margin: 15px 0; */
+}
+
+.header-two {
+      font-size: 16px;
+      font-weight: bold;
+}
+
+.content {
+      padding: 10px 0;
+}
+
+.card {
+      border: 1px solid #f1f1f1;
+      padding: 20px 2.5rem;
+      min-width: 2.5rem;
+      height: 300px;
+      margin-right: 1.5rem;
+      border-radius: 20px;
+}
+
+.btn-secondary {
+      padding: 6px 16px;
+      border: 1px solid #E5E5E5;
+      border-radius: 40px;
+      font-weight: 600;
+}
+.btn-primary {
+      padding: 6px 16px;
+      background: #262626;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 600;
+}
